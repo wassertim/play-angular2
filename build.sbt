@@ -15,7 +15,8 @@ libraryDependencies ++= Seq(
   "org.webjars.npm" % "systemjs" % "0.19.6",
   "org.webjars.npm" % "angular2" % "2.0.0-beta.0",
   "org.webjars.npm" % "typescript" % "1.7.5",
-  "org.webjars.npm" % "rxjs" % "5.0.0-beta.1"
+  "org.webjars.npm" % "rxjs" % "5.0.0-beta.1",
+  "org.webjars.npm" % "bootstrap-sass" % "3.3.6"
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
