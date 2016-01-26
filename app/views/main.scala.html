@@ -21,6 +21,16 @@
             <!-- 2. Configure SystemJS -->
         <script>
                 System.config({
+                    packages: {
+                        "assets/javascripts": {
+                            format: 'register',
+                            defaultExtension: 'js'
+                        }
+                    }
+                });
+                System.import('assets/javascripts/app/boot')
+                        .then(null, console.error.bind(console));
+                /*System.config({
                     transpiler: 'typescript',
                     typescriptOptions: { emitDecoratorMetadata: true },
                     packages: {
@@ -30,7 +40,7 @@
                     }
                 });
                 System.import('assets/javascripts/app/boot')
-                        .then(null, console.error.bind(console));
+                        .then(null, console.error.bind(console));*/
         </script>
 
     </head>

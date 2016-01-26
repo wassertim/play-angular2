@@ -25,3 +25,9 @@ resolvers += "Madoushi sbt-plugins" at "https://dl.bintray.com/madoushi/sbt-plug
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
+
+TypescriptKeys.moduleKind in Assets := "system"
+TypescriptKeys.sourceMap in Assets := true
+TypescriptKeys.experimentalDecorators in Assets := true
+
+JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
