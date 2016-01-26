@@ -2,7 +2,7 @@ name := """play-angular2"""
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 
 scalaVersion := "2.11.6"
 
@@ -10,7 +10,12 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  specs2 % Test
+  specs2 % Test,
+  "org.webjars.npm" % "es6-shim" % "0.34.1",
+  "org.webjars.npm" % "systemjs" % "0.19.6",
+  "org.webjars.npm" % "angular2" % "2.0.0-beta.0",
+  "org.webjars.npm" % "typescript" % "1.7.5",
+  "org.webjars.npm" % "rxjs" % "5.0.0-beta.1"
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
