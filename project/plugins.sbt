@@ -3,7 +3,7 @@ addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.4.6")
 
 // web plugins
 
-addSbtPlugin("com.arpnetworking" % "sbt-typescript" % "0.1.20-SNAPSHOT")
+addSbtPlugin("com.arpnetworking" % "sbt-typescript" % "0.2.0")
 
 addSbtPlugin("org.madoushi.sbt" % "sbt-sass" % "0.9.3")
 

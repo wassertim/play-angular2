@@ -26,8 +26,10 @@ resolvers += "Madoushi sbt-plugins" at "https://dl.bintray.com/madoushi/sbt-plug
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
-TypescriptKeys.moduleKind in Assets := "system"
-TypescriptKeys.sourceMap in Assets := true
-TypescriptKeys.experimentalDecorators in Assets := true
+TypescriptKeys.moduleKind := "System"
+TypescriptKeys.sourceMap := true
+TypescriptKeys.experimentalDecorators := true
+TypescriptKeys.emitDecoratorMetadata := true
+TypescriptKeys.moduleResolutionKind := "NodeJs"
 
 JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
