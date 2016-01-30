@@ -5,4 +5,3 @@ import {Component} from 'angular2/core';
     template: '<h1>Angular 2 Play! app 3</h1>'
 })
 export class AppComponent { }
-var e = 5;
